@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.example.mykotlinnavigation.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_main_fragment_to_sub_fragment"
+            app:destination="@id/sub_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sub_fragment"
+        android:name="com.example.mykotlinnavigation.SubFragment"
+        android:label="sub_fragment"
+        tools:layout="@layout/sub_fragment" >
+        <action
+            android:id="@+id/action_sub_fragment_to_anotherSubFragment"
+            app:destination="@id/anotherSubFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anotherSubFragment"
+        android:name="com.example.mykotlinnavigation.AnotherSubFragment"
+        android:label="another_sub_fragment"
+        tools:layout="@layout/another_sub_fragment" />
+    <!-- Global action, You can use a global action to create a common action that multiple destinations can use.
+    For example, you might want buttons in different destinations to navigate to the same main app screen. -->
+    <action
+        android:id="@+id/action_global_main_fragment"
+        app:destination="@id/main_fragment"/>
+</navigation>

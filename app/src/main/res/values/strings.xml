@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyKotlinNavigation</string>
+
+    <string name="hello_main_fragment">Hello main fragment</string>
+    <string name="hello_sub_fragment">Hello sub fragment</string>
+    <string name="hello_another_sub_fragment">Hello another sub fragment</string>
+
+    <string name="navigate_to_destination_sub_fragment">Navigate to destination sub fragment</string>
+    <string name="navigate_to_destination_another_sub_fragment">Navigate to destination another sub fragment</string>
+    <string name="navigate_to_destination_main_fragment">Navigate to destination main fragment</string>
+</resources>
